@@ -1,0 +1,9 @@
+Revision history for Perl extension D64::Disk::Image.
+
+0.02  2012-01-08
+    - TODO: document implemented fixes here!
+
+0.01  2010-10-10
+    - initial version (provides Perl interface to Per Olofsson's "diskimage.c",
+      supports manipulating Commodore disk images using functions implemented
+      in diskimage.c)
