@@ -119,10 +119,6 @@ use constant D64_SIZE => 174848;
 use constant D71_SIZE => 349696;
 use constant D81_SIZE => 819200;
 
-# Open mode constants:
-use constant F_READ  => 'rb';
-use constant F_WRITE => 'wb';
-
 # File type constants:
 use constant T_DEL => 0;
 use constant T_SEQ => 1;
@@ -131,6 +127,15 @@ use constant T_USR => 3;
 use constant T_REL => 4;
 use constant T_CBM => 5;
 use constant T_DIR => 6;
+
+our $VERSION = '0.01';
+
+use Carp qw/carp croak verbose/;
+
+require XSLoader;
+XSLoader::load(__PACKAGE__, $VERSION);
+
+use D64::Disk::Image::File qw(:all);
 
 use base qw( Exporter );
 our %EXPORT_TAGS = ();
@@ -141,15 +146,6 @@ $EXPORT_TAGS{'types'} = [ @{$EXPORT_TAGS{'imagetypes'}}, @{$EXPORT_TAGS{'filetyp
 $EXPORT_TAGS{'all'} = [ @{$EXPORT_TAGS{'types'}}, @{$EXPORT_TAGS{'modes'}} ];
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw();
-
-our $VERSION = '0.01';
-
-use Carp qw/carp croak verbose/;
-
-require XSLoader;
-XSLoader::load(__PACKAGE__, $VERSION);
-
-require D64::Disk::Image::File;
 
 =head2 new / load_image
 
@@ -755,7 +751,7 @@ There are no known bugs at the moment. Please report any bugs or feature request
 
 C<D64::Disk::Image> exports nothing by default.
 
-You may request the import of image type constants (D64, D71, and D81), and file type constants (C<T_DEL>, C<T_SEQ>, C<T_PRG>, C<T_USR>, C<T_REL>, C<T_CBM>, and C<T_DIR>). All of these constants can be explicitly imported from C<D64::Disk::Image> by using it with ":types" tag. You may also request the import of open mode constants (C<F_READ>, and C<F_WRITE>). Both these constants can be explicitly imported from C<D64::Disk::Image> by using it with ":modes" tag. All constants can be explicitly imported from C<D64::Disk::Image> by using it with ":all" tag, which is highly recommended.
+You may request the import of image type constants (D64, D71, and D81), and file type constants (C<T_DEL>, C<T_SEQ>, C<T_PRG>, C<T_USR>, C<T_REL>, C<T_CBM>, and C<T_DIR>). All of these constants can be explicitly imported from C<D64::Disk::Image> by using it with ":types" tag. You may also request the import of open mode constants (C<F_READ>, and C<F_WRITE>). Both these constants can be explicitly imported from C<D64::Disk::Image> by using it with ":modes" tag. All constants can be explicitly imported from C<D64::Disk::Image> by using it with ":all" tag.
 
 =head1 SEE ALSO
 
