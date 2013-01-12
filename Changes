@@ -1,6 +1,6 @@
 Revision history for Perl extension D64::Disk::Image.
 
-0.02  2012-01-12
+0.02  2013-01-12
     - Fixed "Segmentation fault" exception on OpenBSD and alikes, which was
       originally caused by closing an opened file without having written any
       data into it. Such operation had resulted in creating a new diskfile with
