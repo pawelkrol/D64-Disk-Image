@@ -3,6 +3,11 @@ D64-Disk-Image
 
 D64::Disk::Image package provides a Perl interface to Per Olofsson's "[diskimage.c](http://www.paradroid.net/diskimage/)", an ANSI C library for manipulating Commodore disk images written in C.
 
+VERSION
+-------
+
+Version 0.02 (2013-01-12)
+
 INSTALLATION
 ------------
 
