@@ -11,6 +11,11 @@ Makefile
 Makefile.old
 MANIFEST.bak
 META.yml
+MYMETA.json
 MYMETA.yml
 nytprof.out
 pm_to_blib
+diskimage.o
+Image.bs
+Image.c
+Image.o
