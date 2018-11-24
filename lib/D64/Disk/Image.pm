@@ -128,7 +128,7 @@ use constant T_REL => 4;
 use constant T_CBM => 5;
 use constant T_DIR => 6;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp qw/carp croak verbose/;
 
@@ -763,7 +763,7 @@ Pawel Krol, E<lt>pawelkrol@cpan.orgE<gt>.
 
 =head1 VERSION
 
-Version 0.02 (2013-01-12)
+Version 0.03 (2018-11-24)
 
 =head1 COPYRIGHT AND LICENSE
 
