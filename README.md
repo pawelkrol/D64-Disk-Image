@@ -1,7 +1,7 @@
 D64-Disk-Image
 ==============
 
-D64::Disk::Image package provides a Perl interface to Per Olofsson's "[diskimage.c](http://www.paradroid.net/diskimage/)", an ANSI C library for manipulating Commodore disk images written in C.
+D64::Disk::Image package provides a Perl interface to Per Olofsson's "[diskimage.c](https://paradroid.automac.se/diskimage/)", an ANSI C library for manipulating Commodore disk images written in C.
 
 VERSION
 -------
@@ -21,12 +21,12 @@ To install this module type the following:
 DOCUMENTATION
 -------------
 
-A comprehensive module documentation is available on [CPAN](http://search.cpan.org/~pawelkrol/D64-Disk-Image/lib/D64/Disk/Image.pm).
+A comprehensive module documentation is available on [CPAN](https://metacpan.org/pod/D64::Disk::Image).
 
 COPYRIGHT AND LICENCE
 ---------------------
 
-[diskimage.c](http://www.paradroid.net/diskimage/) is released under a slightly modified BSD license.
+[diskimage.c](https://paradroid.automac.se/diskimage/) is released under a slightly modified BSD license.
 
 Copyright (c) 2003-2006, Per Olofsson
 All rights reserved.
