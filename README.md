@@ -6,7 +6,7 @@ D64::Disk::Image package provides a Perl interface to Per Olofsson's "[diskimage
 VERSION
 -------
 
-Version 0.03 (2018-11-24)
+Version 0.04 (2018-11-29)
 
 INSTALLATION
 ------------
